@@ -91,32 +91,6 @@ Exact probability and metrics can differ by package versions and random split.
 - `current`: simulated current in A
 - `failure`: target label (`1` = simulated failure risk, `0` = normal)
 
-## How the simulation works
-The simulator samples plausible ranges and creates a risk label from combined sensor thresholds plus a small amount of noise. The model learns those simulated patterns. This demonstrates a complete ML workflow, but performance on synthetic data does not establish real-world predictive accuracy.
 
-## Outputs and screenshots
-Save screenshots of:
-1. Dataset preview
-2. Terminal showing training/evaluation
-3. Confusion matrix (`outputs/confusion_matrix.png`)
-4. Feature importance (`outputs/feature_importance.png`)
-5. Dashboard with a prediction
-6. API test response
-
-## GitHub publishing
-Create a repository named `AI-Predictive-Maintenance-IoT`, then from this folder:
-```bash
-git init
-git add .
-git commit -m "Build simulated predictive maintenance ML pipeline"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/AI-Predictive-Maintenance-IoT.git
-git push -u origin main
-```
-Replace `YOUR-USERNAME` with your GitHub username. Do not commit virtual environments or private credentials.
-
-## Suggested improvements
-- Replace synthetic data with a documented public industrial dataset.
-- Use time-based validation to prevent leakage when working with sequential data.
-- Add drift monitoring, alert history, authentication, and deployment tests.
+authentication, and deployment tests.
 - Calibrate risk thresholds with domain experts before any real-world use.
