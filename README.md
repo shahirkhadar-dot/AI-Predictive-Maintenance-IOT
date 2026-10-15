@@ -94,3 +94,5 @@ Exact probability and metrics can differ by package versions and random split.
 
 authentication, and deployment tests.
 - Calibrate risk thresholds with domain experts before any real-world use.
+  <img width="720" height="1512" alt="AI predective" src="https://github.com/user-attachments/assets/36fb75cc-3383-41c4-989d-7488e64ce5de" />
+
